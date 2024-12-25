@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Car Rental System</h1>
+        <nav>
+            <a href="#available-cars">Available Cars</a>
+            <a href="#booking">Make a Booking</a>
+        </nav>
+    </header>
+
+    <div id="available-cars" class="section">
+        <h2>Available Cars</h2>
+        <div id="cars-list" class="cars-list">
+            <!-- Car items will be listed here -->
+        </div>
+    </div>
+
+    <div id="booking" class="section">
+        <h2>Make a Booking</h2>
+        <form id="booking-form">
+            <label for="car-id">Select a Car:</label>
+            <select id="car-id" required>
+                <!-- Car options will be populated dynamically -->
+            </select>
+
+            <label for="rental-period">Rental Period (Days):</label>
+            <input type="number" id="rental-period" min="1" required>
+
+            <label for="customer-name">Your Name:</label>
+            <input type="text" id="customer-name" required>
+
+            <button type="submit">Book Now</button>
+        </form>
+    </div>
+
+    <div id="rental-status" class="section">
+        <h2>Rental Status</h2>
+        <ul id="rental-list">
+            <!-- Rental bookings will be listed here -->
+        </ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
